@@ -1,0 +1,17 @@
+$bg: #a770ff;
+$blue: #00d6ff;
+$yellow: #ffd01f;
+$rose: #ff62bd;
+$violet: #874cff;
+
+
+@mixin bgz {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+@mixin center {
+  top: 50%;
+  transform: translateY(-50%);
+}

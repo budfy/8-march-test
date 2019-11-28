@@ -1,0 +1,173 @@
+@media (max-width: 1200px) {
+  body {
+    width: 100vw;
+    overflow-x: hidden;
+  }
+
+  .page-wrapper{
+    background-image: url(../img/SVG/bg-resp.svg);
+    background-size: cover;
+    background-position: center 20px;
+    background-repeat: no-repeat;
+  }
+
+  .container {
+    padding: 0 20px;
+  }
+
+  .page__background {
+    display: none;
+  }
+
+  .page__top-text {
+    margin-top: 25px;
+  }
+
+  .page__list-wrapper {
+    flex-direction: column;
+    align-items: center;
+
+    .page__left-list,
+    .page__right-list {
+      margin-left: 0;
+      margin-right: 0;
+      width: 370px;
+      max-width: unset;
+    }
+  }
+}
+
+
+@media (max-width: 1180px) {
+  .girl__three, .girl__four, .girl__five {
+    display: none;
+  }
+}
+
+@media (max-width: 1050px) {
+  .mainpage__text-top{
+    margin: 20px auto;
+    .responsive__text{
+      display: block;
+    }
+    .text-top__left, .text-top__right{
+      display: none;
+    }
+  }
+  .animation_container{
+    display: none;
+  }
+  .image__container{
+    display: block;
+    max-height: 500px;
+    img{
+      object-fit: contain;
+      max-height: 500px;
+    }
+  }
+}
+
+@media (max-width: 800px) {
+  .page__background {
+    width: 100%;
+    height: 100%;
+    max-width: 96vw;
+    overflow: hidden;
+  }
+
+  .header__wrapper {
+    justify-content: center;
+  }
+
+  .header__logo,
+  .popup__inner,
+  .footer__popup {
+    display: none !important;
+  }
+}
+
+@media (max-width: 650px) {
+
+  .header__wrapper {
+    padding: 19px 0;
+  }
+
+  .header__nav {
+    margin: 0;
+
+    &-list {
+      padding: 0;
+      margin: 0;
+
+      li {
+        margin: 0;
+        padding: 0;
+      }
+    }
+  }
+
+  .page__top-title {
+    font-size: 100px;
+  }
+
+  .page__list-wrapper .page__left-list,
+  .page__list-wrapper .page__right-list {
+    width: 100%;
+    padding-right: 25px;
+  }
+
+  .winners__list-wrapper{
+    .winners__left-list, .winners__right-list{
+      width: 370px;
+    }
+  }
+}
+
+@media (max-width: 600px) {
+  .page__top-title {
+    font-size: 80px;
+  }
+}
+
+@media (max-width: 450px) {
+  .page__top-title {
+    font-size: 50px;
+  }
+
+  .header__nav-list {
+    li {
+      margin: 0;
+      display: inline;
+
+      .nav__link {
+        padding: 10px 15px;
+      }
+
+      &+li {
+        margin-left: -5px;
+      }
+    }
+  }
+
+  .winners__list-wrapper{
+    .winners__left-list, .winners__right-list{
+      width: 370px;
+      padding-inline-start: 20px;
+      li{
+        max-width: 260px;
+        width: 60%;
+        padding-left: 25px;
+        word-wrap: break-word;
+        margin-left: 30px;
+        margin-right: 30px;
+                &::before{
+          padding-right: 10px;
+        }
+        span{
+          right: -60px;
+        }
+      }
+    }
+
+  }
+}
